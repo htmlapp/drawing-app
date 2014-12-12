@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<body onmousemove="draw(event);">
+<script type="text/javascript">
+window.onload = document.body.style.height = window.innerHeight + "px";
+    function draw(event){
+    var x = event.clientX;
+    var y = event.clientY;
+    var div = document.createElement("DIV");
+    div.style.backgroundColor = "blue";
+    div.style.width = "10px";
+    div.style.height = "10px";
+    div.style.position = "absolute";
+    div.style.display = "inline";
+    div.style.top = y + "px";;
+    div.style.left = x + "px";
+	div.style.borderRadius = "50%";
+    document.body.appendChild(div);
+}
+</script>
+</body>
+</html>
